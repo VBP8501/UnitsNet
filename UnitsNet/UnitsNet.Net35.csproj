@@ -79,6 +79,7 @@
     <Compile Include="GeneratedCode\Enums\DensityUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\DurationUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\DynamicViscosityUnit.g.cs" />
+    <Compile Include="GeneratedCode\Enums\ElasticityUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\ElectricCurrentUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\ElectricPotentialUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\ElectricResistanceUnit.g.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="GeneratedCode\Extensions\Number\NumberToDensityExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToDurationExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToDynamicViscosityExtensions.g.cs" />
+    <Compile Include="GeneratedCode\Extensions\Number\NumberToElasticityExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToElectricCurrentExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToElectricPotentialExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToElectricResistanceExtensions.g.cs" />
@@ -156,6 +158,7 @@
     <Compile Include="GeneratedCode\UnitClasses\Density.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\Duration.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\DynamicViscosity.g.cs" />
+    <Compile Include="GeneratedCode\UnitClasses\Elasticity.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\ElectricCurrent.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\ElectricPotential.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\ElectricResistance.g.cs" />

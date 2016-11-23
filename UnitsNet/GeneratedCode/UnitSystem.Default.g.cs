@@ -451,6 +451,201 @@ namespace UnitsNet
                                 new AbbreviationsForCulture("en-US", "P"),
                             }),
                     }),
+                new UnitLocalization(typeof (ElasticityUnit),
+                    new[]
+                    {
+                        new CulturesForEnumValue((int) ElasticityUnit.Atmosphere,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "atm"),
+                                new AbbreviationsForCulture("ru-RU", "атм"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Bar,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "bar"),
+                                new AbbreviationsForCulture("ru-RU", "бар"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Centibar,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "cbar"),
+                                new AbbreviationsForCulture("ru-RU", "cбар"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Decapascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "daPa"),
+                                new AbbreviationsForCulture("ru-RU", "даПа"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Decibar,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "dbar"),
+                                new AbbreviationsForCulture("ru-RU", "dбар"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Gigapascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "GPa"),
+                                new AbbreviationsForCulture("ru-RU", "ГПа"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Hectopascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "hPa"),
+                                new AbbreviationsForCulture("ru-RU", "гПа"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Kilobar,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kbar"),
+                                new AbbreviationsForCulture("ru-RU", "kбар"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilogramForcePerSquareCentimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kgf/cm²"),
+                                new AbbreviationsForCulture("ru-RU", "кгс/см²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilogramForcePerSquareMeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kgf/m²"),
+                                new AbbreviationsForCulture("ru-RU", "кгс/м²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilogramForcePerSquareMillimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kgf/mm²"),
+                                new AbbreviationsForCulture("ru-RU", "кгс/мм²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilonewtonPerSquareCentimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kN/cm²"),
+                                new AbbreviationsForCulture("ru-RU", ""),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilonewtonPerSquareMeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kN/m²"),
+                                new AbbreviationsForCulture("ru-RU", ""),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilonewtonPerSquareMillimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kN/mm²"),
+                                new AbbreviationsForCulture("ru-RU", ""),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Kilopascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kPa"),
+                                new AbbreviationsForCulture("ru-RU", "кПа"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilopoundForcePerSquareFoot,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kipf/ft²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.KilopoundForcePerSquareInch,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "kipf/in²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Megabar,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "Mbar"),
+                                new AbbreviationsForCulture("ru-RU", "Mбар"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Megapascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "MPa"),
+                                new AbbreviationsForCulture("ru-RU", "МПа"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Micropascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "μPa"),
+                                new AbbreviationsForCulture("ru-RU", "мкПа"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Millibar,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "mbar"),
+                                new AbbreviationsForCulture("ru-RU", "mбар"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.NewtonPerSquareCentimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "N/cm²"),
+                                new AbbreviationsForCulture("ru-RU", "Н/см²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.NewtonPerSquareMeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "N/m²"),
+                                new AbbreviationsForCulture("ru-RU", "Н/м²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.NewtonPerSquareMillimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "N/mm²"),
+                                new AbbreviationsForCulture("ru-RU", "Н/мм²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Pascal,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "Pa"),
+                                new AbbreviationsForCulture("ru-RU", "Па"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.PoundForcePerSquareFoot,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "lb/ft²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.PoundForcePerSquareInch,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "lb/in²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Psi,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "psi"),
+                                new AbbreviationsForCulture("ru-RU", "psi"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.TechnicalAtmosphere,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "at"),
+                                new AbbreviationsForCulture("ru-RU", "ат"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.TonneForcePerSquareCentimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "tf/cm²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.TonneForcePerSquareMeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "tf/m²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.TonneForcePerSquareMillimeter,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "tf/mm²"),
+                            }),
+                        new CulturesForEnumValue((int) ElasticityUnit.Torr,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "torr"),
+                                new AbbreviationsForCulture("ru-RU", "торр"),
+                            }),
+                    }),
                 new UnitLocalization(typeof (ElectricCurrentUnit),
                     new[]
                     {
