@@ -1,0 +1,103 @@
+﻿{
+  "Name": "PerTemperature",
+  "BaseUnit": "PerKelvin",
+  "XmlDoc": "Mostly used for thermal expansion coefficient.",
+  "Units": [
+    {
+      "SingularName": "PerKelvin",
+      "PluralName": "PerKelvins",
+      "FromUnitToBaseFunc": "x",
+      "FromBaseToUnitFunc": "x",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/K" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "PerDegreeCelsius",
+      "PluralName": "PerDegreesCelsius",
+      "FromUnitToBaseFunc": "1/(1/x + 273.15)",
+      "FromBaseToUnitFunc": "1/(1/x - 273.15)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°C" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "PerDegreeDelisle",
+      "PluralName": "PerDegreesDelisle",
+      "FromUnitToBaseFunc": "1/(1/x*-2/3 + 373.15)",
+      "FromBaseToUnitFunc": "1/((1/x - 373.15)*-3/2)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°De" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "PerDegreeFahrenheit",
+      "PluralName": "PerDegreesFahrenheit",
+      "FromUnitToBaseFunc": "1/(1/x*5/9 + 459.67*5/9)",
+      "FromBaseToUnitFunc": "1/((1/x - 459.67*5/9)*9/5)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°F" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "PerDegreeNewton",
+      "PluralName": "PerDegreesNewton",
+      "FromUnitToBaseFunc": "1/(1/x*100/33 + 273.15)",
+      "FromBaseToUnitFunc": "1/((1/x - 273.15)*33/100)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°N" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "DegreeRankine",
+      "PluralName": "DegreesRankine",
+      "FromUnitToBaseFunc": "1/(1/x*5/9)",
+      "FromBaseToUnitFunc": "1/(1/x*9/5)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°R" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "PerDegreeReaumur",
+      "PluralName": "PerDegreesReaumur",
+      "FromUnitToBaseFunc": "1/(1/x*5/4 + 273.15)",
+      "FromBaseToUnitFunc": "1/((1/x - 273.15)*4/5)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°Ré" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "PerDegreeRoemer",
+      "PluralName": "PerDegreesRoemer",
+      "FromUnitToBaseFunc": "1/(1/x*40/21 + 273.15 - 7.5*40d/21)",
+      "FromBaseToUnitFunc": "1/((1/x - (273.15 - 7.5*40d/21))*21/40)",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "1/°Rø" ]
+        }
+      ]
+    }
+  ]
+}
