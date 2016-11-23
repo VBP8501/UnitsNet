@@ -25,13 +25,13 @@ using System;
 
 namespace UnitsNet
 {
-    public partial struct PerTemperature
+    public partial struct Temperature
     {
-        public static double operator *(PerTemperature perTemperature, Temperature temperature)
+        public static double operator *(Temperature temperature, PerTemperature perTemperature)
         {
             return perTemperature.PerKelvins * temperature.Kelvins;
         }
-        public static double operator *(Temperature temperature, PerTemperature perTemperature)
+        public static double operator *(PerTemperature perTemperature, Temperature temperature)
         {
             return perTemperature.PerKelvins * temperature.Kelvins;
         }
