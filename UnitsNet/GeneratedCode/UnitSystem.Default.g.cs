@@ -1336,6 +1336,50 @@ namespace UnitsNet
                                 new AbbreviationsForCulture("en-US", "t/d"),
                             }),
                     }),
+                new UnitLocalization(typeof (PerTemperatureUnit),
+                    new[]
+                    {
+                        new CulturesForEnumValue((int) PerTemperatureUnit.DegreeRankine,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°R"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeCelsius,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°C"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeDelisle,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°De"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeFahrenheit,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°F"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeNewton,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°N"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeReaumur,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°Ré"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeRoemer,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°Rø"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerKelvin,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/K"),
+                            }),
+                    }),
                 new UnitLocalization(typeof (PowerUnit),
                     new[]
                     {
