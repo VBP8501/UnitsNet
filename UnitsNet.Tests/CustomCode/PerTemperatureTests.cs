@@ -36,50 +36,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-// ReSharper disable once CheckNamespace
 
-namespace UnitsNet
+using System;
+
+namespace UnitsNet.Tests.CustomCode
 {
-    public enum UnitClass
+    public class PerTemperatureTests : PerTemperatureTestsBase
     {
-        Undefined = 0,
-        Acceleration,
-        AmplitudeRatio,
-        Angle,
-        Area,
-        BrakeSpecificFuelConsumption,
-        Density,
-        Duration,
-        DynamicViscosity,
-        ElectricCurrent,
-        ElectricPotential,
-        ElectricResistance,
-        Energy,
-        Flow,
-        Force,
-        ForceChangeRate,
-        ForcePerLength,
-        Frequency,
-        Information,
-        KinematicViscosity,
-        Length,
-        Level,
-        Mass,
-        MassFlow,
-        PerTemperature,
-        Power,
-        PowerRatio,
-        Pressure,
-        PressureChangeRate,
-        Ratio,
-        RotationalSpeed,
-        SpecificEnergy,
-        SpecificWeight,
-        Speed,
-        Temperature,
-        TemperatureChangeRate,
-        Torque,
-        VitaminA,
-        Volume,
+        // TODO Override properties in base class here
     }
 }

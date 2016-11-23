@@ -93,6 +93,7 @@
     <Compile Include="GeneratedCode\Enums\LevelUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\MassFlowUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\MassUnit.g.cs" />
+    <Compile Include="GeneratedCode\Enums\PerTemperatureUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\PowerRatioUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\PowerUnit.g.cs" />
     <Compile Include="GeneratedCode\Enums\PressureChangeRateUnit.g.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="GeneratedCode\Extensions\Number\NumberToLevelExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToMassExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToMassFlowExtensions.g.cs" />
+    <Compile Include="GeneratedCode\Extensions\Number\NumberToPerTemperatureExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToPowerExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToPowerRatioExtensions.g.cs" />
     <Compile Include="GeneratedCode\Extensions\Number\NumberToPressureChangeRateExtensions.g.cs" />
@@ -168,6 +170,7 @@
     <Compile Include="GeneratedCode\UnitClasses\Level.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\Mass.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\MassFlow.g.cs" />
+    <Compile Include="GeneratedCode\UnitClasses\PerTemperature.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\Power.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\PowerRatio.g.cs" />
     <Compile Include="GeneratedCode\UnitClasses\Pressure.g.cs" />
