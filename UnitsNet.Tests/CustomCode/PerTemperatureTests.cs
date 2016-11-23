@@ -43,6 +43,20 @@ namespace UnitsNet.Tests.CustomCode
 {
     public class PerTemperatureTests : PerTemperatureTestsBase
     {
-        // TODO Override properties in base class here
+        protected override double PerDegreesCelsiusInOnePerKelvin => 1/-272.15;
+
+        protected override double PerDegreesDelisleInOnePerKelvin => 1 / 558.2249999999999;
+
+        protected override double PerDegreesFahrenheitInOnePerKelvin => 1 / -457.87;
+
+        protected override double PerDegreesNewtonInOnePerKelvin => 1 / -89.8095;
+
+        protected override double PerDegreesRankineInOnePerKelvin => 1 / 1.8;
+
+        protected override double PerDegreesReaumurInOnePerKelvin => 1 / -217.72;
+
+        protected override double PerDegreesRoemerInOnePerKelvin => 1 / -135.378750000;
+
+        protected override double PerKelvinsInOnePerKelvin => 1 / 1;
     }
 }

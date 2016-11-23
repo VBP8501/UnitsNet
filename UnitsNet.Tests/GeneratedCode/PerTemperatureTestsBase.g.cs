@@ -53,21 +53,21 @@ namespace UnitsNet.Tests
 // ReSharper disable once PartialTypeWithSinglePart
     public abstract partial class PerTemperatureTestsBase
     {
-        protected abstract double DegreesRankineInOnePerKelvin { get; }
         protected abstract double PerDegreesCelsiusInOnePerKelvin { get; }
         protected abstract double PerDegreesDelisleInOnePerKelvin { get; }
         protected abstract double PerDegreesFahrenheitInOnePerKelvin { get; }
         protected abstract double PerDegreesNewtonInOnePerKelvin { get; }
+        protected abstract double PerDegreesRankineInOnePerKelvin { get; }
         protected abstract double PerDegreesReaumurInOnePerKelvin { get; }
         protected abstract double PerDegreesRoemerInOnePerKelvin { get; }
         protected abstract double PerKelvinsInOnePerKelvin { get; }
 
 // ReSharper disable VirtualMemberNeverOverriden.Global
-        protected virtual double DegreesRankineTolerance { get { return 1e-5; } }
         protected virtual double PerDegreesCelsiusTolerance { get { return 1e-5; } }
         protected virtual double PerDegreesDelisleTolerance { get { return 1e-5; } }
         protected virtual double PerDegreesFahrenheitTolerance { get { return 1e-5; } }
         protected virtual double PerDegreesNewtonTolerance { get { return 1e-5; } }
+        protected virtual double PerDegreesRankineTolerance { get { return 1e-5; } }
         protected virtual double PerDegreesReaumurTolerance { get { return 1e-5; } }
         protected virtual double PerDegreesRoemerTolerance { get { return 1e-5; } }
         protected virtual double PerKelvinsTolerance { get { return 1e-5; } }
@@ -77,11 +77,11 @@ namespace UnitsNet.Tests
         public void PerKelvinToPerTemperatureUnits()
         {
             PerTemperature perkelvin = PerTemperature.FromPerKelvins(1);
-            Assert.AreEqual(DegreesRankineInOnePerKelvin, perkelvin.DegreesRankine, DegreesRankineTolerance);
             Assert.AreEqual(PerDegreesCelsiusInOnePerKelvin, perkelvin.PerDegreesCelsius, PerDegreesCelsiusTolerance);
             Assert.AreEqual(PerDegreesDelisleInOnePerKelvin, perkelvin.PerDegreesDelisle, PerDegreesDelisleTolerance);
             Assert.AreEqual(PerDegreesFahrenheitInOnePerKelvin, perkelvin.PerDegreesFahrenheit, PerDegreesFahrenheitTolerance);
             Assert.AreEqual(PerDegreesNewtonInOnePerKelvin, perkelvin.PerDegreesNewton, PerDegreesNewtonTolerance);
+            Assert.AreEqual(PerDegreesRankineInOnePerKelvin, perkelvin.PerDegreesRankine, PerDegreesRankineTolerance);
             Assert.AreEqual(PerDegreesReaumurInOnePerKelvin, perkelvin.PerDegreesReaumur, PerDegreesReaumurTolerance);
             Assert.AreEqual(PerDegreesRoemerInOnePerKelvin, perkelvin.PerDegreesRoemer, PerDegreesRoemerTolerance);
             Assert.AreEqual(PerKelvinsInOnePerKelvin, perkelvin.PerKelvins, PerKelvinsTolerance);
@@ -90,11 +90,11 @@ namespace UnitsNet.Tests
         [Test]
         public void FromValueAndUnit()
         {
-            Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.DegreeRankine).DegreesRankine, DegreesRankineTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeCelsius).PerDegreesCelsius, PerDegreesCelsiusTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeDelisle).PerDegreesDelisle, PerDegreesDelisleTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeFahrenheit).PerDegreesFahrenheit, PerDegreesFahrenheitTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeNewton).PerDegreesNewton, PerDegreesNewtonTolerance);
+            Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeRankine).PerDegreesRankine, PerDegreesRankineTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeReaumur).PerDegreesReaumur, PerDegreesReaumurTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerDegreeRoemer).PerDegreesRoemer, PerDegreesRoemerTolerance);
             Assert.AreEqual(1, PerTemperature.From(1, PerTemperatureUnit.PerKelvin).PerKelvins, PerKelvinsTolerance);
@@ -104,11 +104,11 @@ namespace UnitsNet.Tests
         public void As()
         {
             var perkelvin = PerTemperature.FromPerKelvins(1);
-            Assert.AreEqual(DegreesRankineInOnePerKelvin, perkelvin.As(PerTemperatureUnit.DegreeRankine), DegreesRankineTolerance);
             Assert.AreEqual(PerDegreesCelsiusInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeCelsius), PerDegreesCelsiusTolerance);
             Assert.AreEqual(PerDegreesDelisleInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeDelisle), PerDegreesDelisleTolerance);
             Assert.AreEqual(PerDegreesFahrenheitInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeFahrenheit), PerDegreesFahrenheitTolerance);
             Assert.AreEqual(PerDegreesNewtonInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeNewton), PerDegreesNewtonTolerance);
+            Assert.AreEqual(PerDegreesRankineInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeRankine), PerDegreesRankineTolerance);
             Assert.AreEqual(PerDegreesReaumurInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeReaumur), PerDegreesReaumurTolerance);
             Assert.AreEqual(PerDegreesRoemerInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerDegreeRoemer), PerDegreesRoemerTolerance);
             Assert.AreEqual(PerKelvinsInOnePerKelvin, perkelvin.As(PerTemperatureUnit.PerKelvin), PerKelvinsTolerance);
@@ -118,11 +118,11 @@ namespace UnitsNet.Tests
         public void ConversionRoundTrip()
         {
             PerTemperature perkelvin = PerTemperature.FromPerKelvins(1);
-            Assert.AreEqual(1, PerTemperature.FromDegreesRankine(perkelvin.DegreesRankine).PerKelvins, DegreesRankineTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerDegreesCelsius(perkelvin.PerDegreesCelsius).PerKelvins, PerDegreesCelsiusTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerDegreesDelisle(perkelvin.PerDegreesDelisle).PerKelvins, PerDegreesDelisleTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerDegreesFahrenheit(perkelvin.PerDegreesFahrenheit).PerKelvins, PerDegreesFahrenheitTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerDegreesNewton(perkelvin.PerDegreesNewton).PerKelvins, PerDegreesNewtonTolerance);
+            Assert.AreEqual(1, PerTemperature.FromPerDegreesRankine(perkelvin.PerDegreesRankine).PerKelvins, PerDegreesRankineTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerDegreesReaumur(perkelvin.PerDegreesReaumur).PerKelvins, PerDegreesReaumurTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerDegreesRoemer(perkelvin.PerDegreesRoemer).PerKelvins, PerDegreesRoemerTolerance);
             Assert.AreEqual(1, PerTemperature.FromPerKelvins(perkelvin.PerKelvins).PerKelvins, PerKelvinsTolerance);

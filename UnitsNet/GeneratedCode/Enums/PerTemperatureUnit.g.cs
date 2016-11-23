@@ -42,11 +42,11 @@ namespace UnitsNet.Units
     public enum PerTemperatureUnit
     {
         Undefined = 0,
-        DegreeRankine,
         PerDegreeCelsius,
         PerDegreeDelisle,
         PerDegreeFahrenheit,
         PerDegreeNewton,
+        PerDegreeRankine,
         PerDegreeReaumur,
         PerDegreeRoemer,
         PerKelvin,

@@ -1339,11 +1339,6 @@ namespace UnitsNet
                 new UnitLocalization(typeof (PerTemperatureUnit),
                     new[]
                     {
-                        new CulturesForEnumValue((int) PerTemperatureUnit.DegreeRankine,
-                            new[]
-                            {
-                                new AbbreviationsForCulture("en-US", "1/°R"),
-                            }),
                         new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeCelsius,
                             new[]
                             {
@@ -1363,6 +1358,11 @@ namespace UnitsNet
                             new[]
                             {
                                 new AbbreviationsForCulture("en-US", "1/°N"),
+                            }),
+                        new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeRankine,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "1/°R"),
                             }),
                         new CulturesForEnumValue((int) PerTemperatureUnit.PerDegreeReaumur,
                             new[]

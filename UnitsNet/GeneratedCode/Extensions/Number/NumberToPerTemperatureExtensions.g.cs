@@ -44,40 +44,6 @@ namespace UnitsNet.Extensions.NumberToPerTemperature
 {
     public static class NumberToPerTemperatureExtensions
     {
-        #region DegreeRankine
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double)"/>
-        public static PerTemperature DegreesRankine(this int value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double?)"/>
-        public static PerTemperature? DegreesRankine(this int? value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double)"/>
-        public static PerTemperature DegreesRankine(this long value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double?)"/>
-        public static PerTemperature? DegreesRankine(this long? value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double)"/>
-        public static PerTemperature DegreesRankine(this double value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double?)"/>
-        public static PerTemperature? DegreesRankine(this double? value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double)"/>
-        public static PerTemperature DegreesRankine(this float value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double?)"/>
-        public static PerTemperature? DegreesRankine(this float? value) => PerTemperature.FromDegreesRankine(value);
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double)"/>
-        public static PerTemperature DegreesRankine(this decimal value) => PerTemperature.FromDegreesRankine(Convert.ToDouble(value));
-
-        /// <inheritdoc cref="PerTemperature.FromDegreesRankine(double?)"/>
-        public static PerTemperature? DegreesRankine(this decimal? value) => PerTemperature.FromDegreesRankine(value == null ? (double?)null : Convert.ToDouble(value.Value));
-
-        #endregion
-
         #region PerDegreeCelsius
 
         /// <inheritdoc cref="PerTemperature.FromPerDegreesCelsius(double)"/>
@@ -211,6 +177,40 @@ namespace UnitsNet.Extensions.NumberToPerTemperature
 
         /// <inheritdoc cref="PerTemperature.FromPerDegreesNewton(double?)"/>
         public static PerTemperature? PerDegreesNewton(this decimal? value) => PerTemperature.FromPerDegreesNewton(value == null ? (double?)null : Convert.ToDouble(value.Value));
+
+        #endregion
+
+        #region PerDegreeRankine
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double)"/>
+        public static PerTemperature PerDegreesRankine(this int value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double?)"/>
+        public static PerTemperature? PerDegreesRankine(this int? value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double)"/>
+        public static PerTemperature PerDegreesRankine(this long value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double?)"/>
+        public static PerTemperature? PerDegreesRankine(this long? value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double)"/>
+        public static PerTemperature PerDegreesRankine(this double value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double?)"/>
+        public static PerTemperature? PerDegreesRankine(this double? value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double)"/>
+        public static PerTemperature PerDegreesRankine(this float value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double?)"/>
+        public static PerTemperature? PerDegreesRankine(this float? value) => PerTemperature.FromPerDegreesRankine(value);
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double)"/>
+        public static PerTemperature PerDegreesRankine(this decimal value) => PerTemperature.FromPerDegreesRankine(Convert.ToDouble(value));
+
+        /// <inheritdoc cref="PerTemperature.FromPerDegreesRankine(double?)"/>
+        public static PerTemperature? PerDegreesRankine(this decimal? value) => PerTemperature.FromPerDegreesRankine(value == null ? (double?)null : Convert.ToDouble(value.Value));
 
         #endregion
 

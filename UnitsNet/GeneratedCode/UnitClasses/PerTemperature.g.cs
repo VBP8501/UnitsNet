@@ -111,14 +111,6 @@ namespace UnitsNet
         }
 
         /// <summary>
-        ///     Get PerTemperature in DegreesRankine.
-        /// </summary>
-        public double DegreesRankine
-        {
-            get { return 1/(1/_perKelvins*9/5); }
-        }
-
-        /// <summary>
         ///     Get PerTemperature in PerDegreesCelsius.
         /// </summary>
         public double PerDegreesCelsius
@@ -148,6 +140,14 @@ namespace UnitsNet
         public double PerDegreesNewton
         {
             get { return 1/((1/_perKelvins - 273.15)*33/100); }
+        }
+
+        /// <summary>
+        ///     Get PerTemperature in PerDegreesRankine.
+        /// </summary>
+        public double PerDegreesRankine
+        {
+            get { return 1/(1/_perKelvins*9/5); }
         }
 
         /// <summary>
@@ -184,14 +184,6 @@ namespace UnitsNet
         }
 
         /// <summary>
-        ///     Get PerTemperature from DegreesRankine.
-        /// </summary>
-        public static PerTemperature FromDegreesRankine(double degreesrankine)
-        {
-            return new PerTemperature(1/(1/degreesrankine*5/9));
-        }
-
-        /// <summary>
         ///     Get PerTemperature from PerDegreesCelsius.
         /// </summary>
         public static PerTemperature FromPerDegreesCelsius(double perdegreescelsius)
@@ -224,6 +216,14 @@ namespace UnitsNet
         }
 
         /// <summary>
+        ///     Get PerTemperature from PerDegreesRankine.
+        /// </summary>
+        public static PerTemperature FromPerDegreesRankine(double perdegreesrankine)
+        {
+            return new PerTemperature(1/(1/perdegreesrankine*5/9));
+        }
+
+        /// <summary>
         ///     Get PerTemperature from PerDegreesReaumur.
         /// </summary>
         public static PerTemperature FromPerDegreesReaumur(double perdegreesreaumur)
@@ -248,21 +248,6 @@ namespace UnitsNet
         }
 
 #if !WINDOWS_UWP
-        /// <summary>
-        ///     Get nullable PerTemperature from nullable DegreesRankine.
-        /// </summary>
-        public static PerTemperature? FromDegreesRankine(double? degreesrankine)
-        {
-            if (degreesrankine.HasValue)
-            {
-                return FromDegreesRankine(degreesrankine.Value);
-            }
-            else
-            {
-                return null;
-            }
-        }
-
         /// <summary>
         ///     Get nullable PerTemperature from nullable PerDegreesCelsius.
         /// </summary>
@@ -316,6 +301,21 @@ namespace UnitsNet
             if (perdegreesnewton.HasValue)
             {
                 return FromPerDegreesNewton(perdegreesnewton.Value);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        ///     Get nullable PerTemperature from nullable PerDegreesRankine.
+        /// </summary>
+        public static PerTemperature? FromPerDegreesRankine(double? perdegreesrankine)
+        {
+            if (perdegreesrankine.HasValue)
+            {
+                return FromPerDegreesRankine(perdegreesrankine.Value);
             }
             else
             {
@@ -380,8 +380,6 @@ namespace UnitsNet
         {
             switch (fromUnit)
             {
-                case PerTemperatureUnit.DegreeRankine:
-                    return FromDegreesRankine(val);
                 case PerTemperatureUnit.PerDegreeCelsius:
                     return FromPerDegreesCelsius(val);
                 case PerTemperatureUnit.PerDegreeDelisle:
@@ -390,6 +388,8 @@ namespace UnitsNet
                     return FromPerDegreesFahrenheit(val);
                 case PerTemperatureUnit.PerDegreeNewton:
                     return FromPerDegreesNewton(val);
+                case PerTemperatureUnit.PerDegreeRankine:
+                    return FromPerDegreesRankine(val);
                 case PerTemperatureUnit.PerDegreeReaumur:
                     return FromPerDegreesReaumur(val);
                 case PerTemperatureUnit.PerDegreeRoemer:
@@ -417,8 +417,6 @@ namespace UnitsNet
             }
             switch (fromUnit)
             {
-                case PerTemperatureUnit.DegreeRankine:
-                    return FromDegreesRankine(value.Value);
                 case PerTemperatureUnit.PerDegreeCelsius:
                     return FromPerDegreesCelsius(value.Value);
                 case PerTemperatureUnit.PerDegreeDelisle:
@@ -427,6 +425,8 @@ namespace UnitsNet
                     return FromPerDegreesFahrenheit(value.Value);
                 case PerTemperatureUnit.PerDegreeNewton:
                     return FromPerDegreesNewton(value.Value);
+                case PerTemperatureUnit.PerDegreeRankine:
+                    return FromPerDegreesRankine(value.Value);
                 case PerTemperatureUnit.PerDegreeReaumur:
                     return FromPerDegreesReaumur(value.Value);
                 case PerTemperatureUnit.PerDegreeRoemer:
@@ -587,8 +587,6 @@ namespace UnitsNet
         {
             switch (unit)
             {
-                case PerTemperatureUnit.DegreeRankine:
-                    return DegreesRankine;
                 case PerTemperatureUnit.PerDegreeCelsius:
                     return PerDegreesCelsius;
                 case PerTemperatureUnit.PerDegreeDelisle:
@@ -597,6 +595,8 @@ namespace UnitsNet
                     return PerDegreesFahrenheit;
                 case PerTemperatureUnit.PerDegreeNewton:
                     return PerDegreesNewton;
+                case PerTemperatureUnit.PerDegreeRankine:
+                    return PerDegreesRankine;
                 case PerTemperatureUnit.PerDegreeReaumur:
                     return PerDegreesReaumur;
                 case PerTemperatureUnit.PerDegreeRoemer:
