@@ -62,6 +62,7 @@
     <Compile Include="CustomCode\UnitClasses\MassFlow.extra.cs" />
     <Compile Include="CustomCode\UnitClasses\Power.extra.cs" />
     <Compile Include="CustomCode\UnitClasses\PowerRatio.extra.cs" />
+    <Compile Include="CustomCode\UnitClasses\Elasticity.extra.cs" />
     <Compile Include="CustomCode\UnitClasses\Pressure.extra.cs" />
     <Compile Include="CustomCode\UnitClasses\RotationalSpeed.extra.cs" />
     <Compile Include="CustomCode\UnitClasses\SpecificEnergy.extra.cs" />

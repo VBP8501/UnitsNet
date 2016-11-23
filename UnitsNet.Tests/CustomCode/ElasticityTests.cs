@@ -38,11 +38,90 @@
 
 
 using System;
+using NUnit.Framework;
 
 namespace UnitsNet.Tests.CustomCode
 {
     public class ElasticityTests : ElasticityTestsBase
     {
-        // TODO Override properties in base class here
+        protected override double AtmospheresInOneNewtonPerSquareMeter => 9.8692 * 1E-6;
+
+        protected override double BarsInOneNewtonPerSquareMeter => 1E-5;
+
+        protected override double KilogramsForcePerSquareCentimeterInOneNewtonPerSquareMeter => 0.101971621e-5;
+
+        protected override double KilogramsForcePerSquareMeterInOneNewtonPerSquareMeter => 0.101971621;
+
+        protected override double KilogramsForcePerSquareMillimeterInOneNewtonPerSquareMeter => 0.101971621e-7;
+
+        protected override double KilonewtonsPerSquareCentimeterInOneNewtonPerSquareMeter => 1e-7;
+
+        protected override double KilonewtonsPerSquareMeterInOneNewtonPerSquareMeter => 0.001;
+
+        protected override double KilonewtonsPerSquareMillimeterInOneNewtonPerSquareMeter => 1e-9;
+
+        protected override double KilopascalsInOneNewtonPerSquareMeter => 1e-3;
+
+        protected override double KilopoundsForcePerSquareFootInOneNewtonPerSquareMeter => 2.089e-5;
+
+        protected override double KilopoundsForcePerSquareInchInOneNewtonPerSquareMeter => 1.45e-7;
+
+        protected override double MegapascalsInOneNewtonPerSquareMeter => 1E-6;
+
+        protected override double NewtonsPerSquareCentimeterInOneNewtonPerSquareMeter => 1E-4;
+
+        protected override double NewtonsPerSquareMeterInOneNewtonPerSquareMeter => 1;
+
+        protected override double NewtonsPerSquareMillimeterInOneNewtonPerSquareMeter => 1E-6;
+
+        protected override double PascalsInOneNewtonPerSquareMeter => 1;
+
+        protected override double PoundsForcePerSquareFootInOneNewtonPerSquareMeter => 0.0208854342;
+
+        protected override double PoundsForcePerSquareInchInOneNewtonPerSquareMeter => 0.000145037738;
+
+        protected override double PsiInOneNewtonPerSquareMeter => 1.450377 * 1E-4;
+
+        protected override double TechnicalAtmospheresInOneNewtonPerSquareMeter => 1.0197 * 1E-5;
+
+        protected override double TonnesForcePerSquareCentimeterInOneNewtonPerSquareMeter => 1e-8;
+
+        protected override double TonnesForcePerSquareMeterInOneNewtonPerSquareMeter => 1e-4;
+
+        protected override double TonnesForcePerSquareMillimeterInOneNewtonPerSquareMeter => 1e-10;
+
+        protected override double TorrsInOneNewtonPerSquareMeter => 7.5006 * 1E-3;
+
+        protected override double CentibarsInOneNewtonPerSquareMeter => 1e-3;
+
+        protected override double DecapascalsInOneNewtonPerSquareMeter => 1e-1;
+
+        protected override double DecibarsInOneNewtonPerSquareMeter => 1e-4;
+
+        protected override double GigapascalsInOneNewtonPerSquareMeter => 1e-9;
+
+        protected override double HectopascalsInOneNewtonPerSquareMeter => 1e-2;
+
+        protected override double KilobarsInOneNewtonPerSquareMeter => 1e-8;
+
+        protected override double MegabarsInOneNewtonPerSquareMeter => 1e-11;
+
+        protected override double MicropascalsInOneNewtonPerSquareMeter => 1e6;
+
+        protected override double MillibarsInOneNewtonPerSquareMeter => 1e-2;
+
+        [Test]
+        public void AreaTimesPressureEqualsForce()
+        {
+            Force force = Area.FromSquareMeters(3) * Pressure.FromPascals(20);
+            Assert.AreEqual(force, Force.FromNewtons(60));
+        }
+
+        [Test]
+        public void PressureTimesAreaEqualsForce()
+        {
+            Force force = Pressure.FromPascals(20) * Area.FromSquareMeters(3);
+            Assert.AreEqual(force, Force.FromNewtons(60));
+        }
     }
 }
